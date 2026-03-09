@@ -1,7 +1,7 @@
 import { animate , splitText, stagger } from 'animejs';
 import { useEffect } from "react";
 
-function AppearingText({style ,children}){
+function AppearingText({ style, children, className }) {
 
     useEffect(() => {
         const { words } = splitText('p', {
@@ -19,16 +19,22 @@ function AppearingText({style ,children}){
         });
 
     }, []);
-    return(
-        <div class="large centered row">
-            <p class="text-xl" id="welcomeText" 
-            style={{
-                fontSize:"2rem",
-                marginInlineStart:"5vw",
-                ... style
-            }}>{...children}</p>
+
+    return (
+        <div className="large centered row">
+            <p 
+                className={`text-xl ${className}`} 
+                id="welcomeText" 
+                style={{
+                    fontSize: "2rem",
+                    marginInlineStart: "5vw",
+                    ...style
+                }}
+            >
+                {children}
+            </p>
         </div>
-    )
+    );
 }
 
 export default AppearingText;

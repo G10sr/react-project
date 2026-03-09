@@ -1,5 +1,5 @@
 import Button from "../components/CustomButton";
-import Header from "../components/Header";
+import "../assets/css/productos.css"
 function Productos(){
     return(
         <div>
