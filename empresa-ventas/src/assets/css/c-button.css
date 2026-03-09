@@ -1,0 +1,15 @@
+.custom-button {
+  font-weight: 700;
+  background-color: var(--C-blue);
+  padding-inline: 4vw;
+  padding-block: 1vh;
+  color: var(--C-white);
+  border: none;
+  cursor: pointer;
+  transition: 100ms;
+  border-radius: 3px;
+}
+
+.custom-button:hover {
+  background-color: var(--C-blueShaded);
+}
