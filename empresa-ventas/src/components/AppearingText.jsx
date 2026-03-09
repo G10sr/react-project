@@ -26,7 +26,7 @@ function AppearingText({ style, children, className }) {
                 className={`text-xl ${className}`} 
                 id="welcomeText" 
                 style={{
-                    fontSize: "2rem",
+                    fontSize: "3rem",
                     marginInlineStart: "5vw",
                     ...style
                 }}

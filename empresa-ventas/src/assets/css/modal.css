@@ -1,0 +1,109 @@
+.button{
+    background-color: var(--C-green);
+    width: 100%;
+    max-width: 100%;
+    width: 2rem;
+    min-width: 300px;
+    box-sizing: border-box;
+}
+.button:hover{
+    background-color: var(--C-green);
+    text-shadow: none;
+}
+#layout-usage-animate-modal-dialog{
+    margin-top: 20px;
+    width: 100%;
+}
+.layout-container{
+
+    width: inherit;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+#layout-dialog {
+  --overlay-alpha: 100%;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  z-index: 1000;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100dvh;
+  max-width: 100%;
+  max-height: 100%;
+  border: none;
+  background: transparent;
+  pointer-events: none;
+  background-color: color-mix(in srgb, var(--C-shadeBlack), transparent var(--overlay-alpha));
+}
+
+#layout-dialog[open] {
+  --overlay-alpha: 40%;
+  pointer-events: auto;
+}
+
+#layout-dialog::backdrop {
+  background: transparent;
+}
+
+#layout-dialog .item {
+  position: relative;
+  visibility: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  text-align: left;
+  width: min(42rem, 90vw);
+  height: 17.5rem;
+  padding: 2rem;
+  padding-right: 5rem;
+  border-radius: 1rem;
+  border: 1px solid var(--C-blueShaded);
+  font-size: 1rem;
+  color: var(--C-white);
+  background-color: var(--C-blue);
+}
+
+#layout-dialog[open] .item {
+  visibility: visible;
+}
+
+#layout-dialog .item h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  will-change: font-size;
+}
+
+#layout-dialog .item h3 {
+  position: absolute;
+  top: 2.9rem;
+  right: 2rem;
+}
+
+#layout-usage-animate-modal-dialog .item {
+  cursor: pointer;
+}
+
+#layout-usage-animate-modal-dialog .item.is-open {
+  visibility: hidden;
+}
+
+#layout-usage-animate-modal-dialog .item p {
+  text-align: left;
+  display: none;
+}
+
+#layout-dialog .item p {
+  padding-top: 1rem;
+  border-top: 1px solid currentColor;  
+}
+
+#layout-dialog[open] .item p {
+  display: block;
+}
