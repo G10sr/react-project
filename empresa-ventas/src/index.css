@@ -1,9 +1,11 @@
 :root {
   --C-blue: #4d94ff;
-  --C-green: #6ac945;
+  --C-green: #016F3E;
   --C-blueShaded: #0e2d83;
   --C-white: #ffffff;
   --C-shadeBlack: #0000004b;
+  --C-greenShaded: #03503C;
+  --C-greenHigh: #027333;
 }
 
 body {
