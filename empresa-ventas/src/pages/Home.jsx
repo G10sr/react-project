@@ -3,6 +3,9 @@ import AppearingText from "../components/AppearingText";
 import "../assets/css/home.css";
 import img1 from"../assets/img/arImg5.jpeg";
 import Modal from "../components/Modal";
+import ScrollVelocity from '../components/ScrollVelocity';
+  
+
 
 
 function Home() {
@@ -15,15 +18,18 @@ function Home() {
         descripcion1: "...",
         descripcion2: "...",
         descripcion3: "...",
-        tituloMapa: "Donde encontrarnos:"
-    });
+        tituloMapa: "Donde encontrarnos:",
+        valores: "Nuestros valores",
+        valores1: "Calidad natural en cada bocado, compromiso con tu bienestar.",
+        valores2: "Sabor auténtico, salud garantizada.",    });
 
     return (
         <div>
             <section className="banner">
                 <img src={img1} alt="Foto1"/>
-                <AppearingText className="text">{text.welcome}</AppearingText>
-            </section>
+                <AppearingText key="welcome" className="text">
+                {text.welcome}
+                </AppearingText>            </section>
             <section className="section-txt">
                 <Modal 
                 itemName1={text.titulo1}
@@ -47,6 +53,16 @@ function Home() {
                     loading="lazy"
                     referrerPolicy="no-referrer-when-downgrade"
                     ></iframe>
+            </section>
+            <section className="section-valores">
+                <AppearingText key="valores" className="text">
+                {text.valores}
+                </AppearingText>
+                <ScrollVelocity
+                texts={[text.valores1, text.valores2]} 
+                velocity={50}
+                className="custom-scroll-text"
+                />
             </section>
         </div>
     );

@@ -24,6 +24,13 @@ body{
     color: white;
     z-index: 3;
 }
+.section-valores{
+    top: 20vh;
+    font-weight: bolder;
+    text-shadow: 1px 6px 4px #333;
+    color: white;
+}
+
 .banner img{
     transform: translateY(-20%);
     border: 5px solid rgba(255, 255, 255, 0.5); /* Borde blanco semi-transparente */
