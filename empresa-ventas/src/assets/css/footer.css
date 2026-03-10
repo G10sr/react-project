@@ -6,4 +6,11 @@
     flex-direction: row;
     background-color: var(--C-greenHigh);
     margin-top: 10vh;
+    color: var(--C-white);
+    padding-left: 5vw;
+    font-weight: 500;
+}
+#Footer img{
+    height: auto;
+    margin-left: auto;
 }

@@ -33,3 +33,19 @@ body{
 .section-txt {
     overflow-x: hidden;
 }
+.section-map{
+    background-color: var(--C-green);
+    margin-inline: 3.5vw;
+    padding: 10px;
+    margin-block: 30px;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    color: var(--C-white);
+    font-weight: 600;
+    font-size: x-large;
+}
+
+.section-map iframe{
+    width: 100%;
+}

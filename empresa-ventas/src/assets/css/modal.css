@@ -76,7 +76,6 @@
 #layout-dialog .item h2 {
   font-size: 2rem;
   margin-bottom: 1rem;
-  will-change: font-size;
 }
 
 #layout-dialog .item h3 {
