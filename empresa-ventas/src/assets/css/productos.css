@@ -2,3 +2,15 @@
     padding-inline: 5vw;
     margin-top: 17vh;
 }
+.caja-de-productos{
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.producto{
+  border: 1px solid #ccc;
+  padding: 15px;
+  width: 200px;
+  text-align: center;
+}
