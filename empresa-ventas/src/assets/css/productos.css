@@ -8,8 +8,8 @@
   flex-wrap: wrap;
 }
 
-.producto{
-  border: 1px solid #ccc;
+h1{
+  color: var(--C-white);
   padding: 15px;
   width: 200px;
   text-align: center;

@@ -1,5 +1,6 @@
 import Button from "./CustomButton";
- 
+import "../assets/css/productCard.css";
+
 function ProductCard({ product }) {
   return (
     <div className="producto">
