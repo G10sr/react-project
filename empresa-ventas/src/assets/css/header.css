@@ -35,11 +35,11 @@ button{
 }
 button:hover{
     text-shadow: none;
-    background-color: var(--C-blue);
+    background-color: var(--botonesHover);
 }
 
 button.active {
-    background-color: var(--C-blue);
+    background-color: var(--botones);
     color: white;
     font-weight: bold;
     text-shadow: none;

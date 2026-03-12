@@ -6,6 +6,9 @@
   --C-shadeBlack: #0000004b;
   --C-greenShaded: #03503C;
   --C-greenHigh: #027333;
+  --botones: rgb(250, 122, 90);
+  --botonesHover: rgb(218, 68, 58);
+
 }
 
 body {

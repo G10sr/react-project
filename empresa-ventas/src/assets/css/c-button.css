@@ -1,6 +1,6 @@
 .custom-button {
   font-weight: 700;
-  background-color: var(--C-blue);
+  background-color: var(--botones);
   padding-inline: 4vw;
   padding-block: 1vh;
   color: var(--C-white);
@@ -11,5 +11,5 @@
 }
 
 .custom-button:hover {
-  background-color: var(--C-blueShaded);
+  background-color: var(--botonesHover);
 }

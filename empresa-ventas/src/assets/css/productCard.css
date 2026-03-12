@@ -1,3 +1,17 @@
 .producto {
 color: white;
+max-width: 20vw;
+width: 500px;
+min-width: 15vw;
+text-align: center;
+background-color: rgba(0, 0, 0, 0.274);
+border-radius: 1rem;
 }
+.producto button{
+    position: relative;
+    bottom: 10%;
+    margin-top: 20px;
+    background-color: var(--botones);
+    color: white;
+}
+
