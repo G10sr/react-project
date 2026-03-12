@@ -4,7 +4,8 @@ import "../assets/css/home.css";
 import img1 from"../assets/img/arImg5.jpeg";
 import Modal from "../components/Modal";
 import ScrollVelocity from '../components/ScrollVelocity';
-  
+import Carousel from './Carousel'
+
 
 
 
@@ -63,6 +64,9 @@ function Home() {
                 velocity={50}
                 className="custom-scroll-text"
                 />
+            </section>
+            <section>
+                
             </section>
         </div>
     );
