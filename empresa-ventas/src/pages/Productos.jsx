@@ -1,7 +1,7 @@
 import { useState } from "react";
 import Button from "../components/CustomButton";
 import "../assets/css/productos.css";
-
+export default Productos;
 function Productos() {
   const [products, setProducts] = useState([
     {
@@ -27,6 +27,31 @@ function Productos() {
     },
   ]);
 
+  function Almuerzos() {
+  const [products, setProducts] = useState([
+    {
+      id: 1,
+      name: "Salchipapas",
+      description: "Descripción del producto 1",
+      price: "$10.00",
+      img: "https://via.placeholder.com/150",
+    },
+    {
+      id: 2,
+      name: "Chifrijo",
+      description: "Descripción del producto 2",
+      price: "$15.00",
+      img: "https://via.placeholder.com/150",
+    },
+    {
+      id: 3,
+      name: "Pescado al Ajillo",
+      description: "Descripción del producto 3",
+      price: "$20.00",
+      img: "https://via.placeholder.com/150",
+    },
+  ]);
+
   return (
     <div id="box">
       <h1>Productos</h1>
@@ -46,5 +71,4 @@ function Productos() {
     </div>
   );
 }
-
-export default Productos;
+}
