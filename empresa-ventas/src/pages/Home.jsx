@@ -4,7 +4,7 @@ import "../assets/css/home.css";
 import img1 from"../assets/img/arImg5.jpeg";
 import Modal from "../components/Modal";
 import ScrollVelocity from '../components/ScrollVelocity';
-import Carousel from './Carousel'
+import CircularGallery from '../components/Carousel'
 
 
 
@@ -65,8 +65,15 @@ function Home() {
                 className="custom-scroll-text"
                 />
             </section>
-            <section>
-                
+            <section style={{height:"60vh"}}>
+                <div style={{ height: '60vh', position: 'relative' }}>
+                <CircularGallery bend={3} textColor="#ffffff" borderRadius={0.05} scrollEase={0.02}
+                    bend={-2}
+                    borderRadius={0.06}
+                    scrollSpeed={2.7}
+                    scrollEase={0.07}
+                    />
+                </div>
             </section>
         </div>
     );
