@@ -4,10 +4,7 @@ import "../assets/css/home.css";
 import img1 from"../assets/img/arImg5.jpeg";
 import Modal from "../components/Modal";
 import ScrollVelocity from '../components/ScrollVelocity';
-<<<<<<< HEAD
 import CircularGallery from '../components/Carousel'
-=======
->>>>>>> 6e9b69924ef354e313bac9eabaa93fa19872f12c
 
 
 
