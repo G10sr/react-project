@@ -1,3 +1,4 @@
+import '../assets/css/productCard.css';
 import Button from "./CustomButton";
 import "../assets/css/productCard.css";
 
