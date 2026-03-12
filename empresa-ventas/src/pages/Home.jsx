@@ -41,6 +41,27 @@ function Home() {
                 itemDesc3={text.descripcion3} 
                 ></Modal>
             </section>
+            <section className="section-valores">
+                <AppearingText key="valores" className="text">
+                {text.valores}
+                </AppearingText>
+                <ScrollVelocity
+                texts={[text.valores1, text.valores2]} 
+                velocity={50}
+                className="custom-scroll-text"
+                />
+            </section>
+            <section style={{height:"60vh"}}>
+                <div style={{ height: '60vh', position: 'relative' }}>
+                <CircularGallery 
+                    textColor="#ffffff" 
+                    borderRadius={0.05} 
+                    scrollEase={0.07}
+                    bend={1}
+                    scrollSpeed={2.7}
+                    />
+                </div>
+            </section>
             <section className="section-map">
                 <p>{text.tituloMapa}</p>
                 <iframe
@@ -54,26 +75,6 @@ function Home() {
                     loading="lazy"
                     referrerPolicy="no-referrer-when-downgrade"
                     ></iframe>
-            </section>
-            <section className="section-valores">
-                <AppearingText key="valores" className="text">
-                {text.valores}
-                </AppearingText>
-                <ScrollVelocity
-                texts={[text.valores1, text.valores2]} 
-                velocity={50}
-                className="custom-scroll-text"
-                />
-            </section>
-            <section style={{height:"60vh"}}>
-                <div style={{ height: '60vh', position: 'relative' }}>
-                <CircularGallery bend={3} textColor="#ffffff" borderRadius={0.05} scrollEase={0.02}
-                    bend={-2}
-                    borderRadius={0.06}
-                    scrollSpeed={2.7}
-                    scrollEase={0.07}
-                    />
-                </div>
             </section>
         </div>
     );

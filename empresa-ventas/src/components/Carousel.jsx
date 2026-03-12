@@ -2,6 +2,13 @@ import { Camera, Mesh, Plane, Program, Renderer, Texture, Transform } from 'ogl'
 import { useEffect, useRef } from 'react';
 
 import '../assets/css/carousel.css';
+import images1 from "../assets/img/arImg1.jpeg";
+import images2 from "../assets/img/arImg2.jpeg";
+import images3 from "../assets/img/arImg3.jpeg";
+import images4 from "../assets/img/arImg4.jpeg";
+import images5 from "../assets/img/arImg5.jpeg";
+import images6 from "../assets/img/arImg6.jpeg";
+import images7 from "../assets/img/arImg7.jpeg";
 
 function debounce(func, wait) {
   let timeout;
@@ -130,7 +137,6 @@ class Media {
     this.font = font;
     this.createShader();
     this.createMesh();
-    this.createTitle();
     this.onResize();
   }
   createShader() {
@@ -213,16 +219,6 @@ class Media {
       program: this.program
     });
     this.plane.setParent(this.scene);
-  }
-  createTitle() {
-    this.title = new Title({
-      gl: this.gl,
-      plane: this.plane,
-      renderer: this.renderer,
-      text: this.text,
-      textColor: this.textColor,
-      fontFamily: this.font
-    });
   }
   update(scroll, direction) {
     this.plane.position.x = this.x - scroll.current - this.extra;
@@ -337,18 +333,13 @@ class App {
   }
   createMedias(items, bend = 1, textColor, borderRadius, font) {
     const defaultItems = [
-      { image: `https://picsum.photos/seed/1/800/600?grayscale`, text: 'Bridge' },
-      { image: `https://picsum.photos/seed/2/800/600?grayscale`, text: 'Desk Setup' },
-      { image: `https://picsum.photos/seed/3/800/600?grayscale`, text: 'Waterfall' },
-      { image: `https://picsum.photos/seed/4/800/600?grayscale`, text: 'Strawberries' },
-      { image: `https://picsum.photos/seed/5/800/600?grayscale`, text: 'Deep Diving' },
-      { image: `https://picsum.photos/seed/16/800/600?grayscale`, text: 'Train Track' },
-      { image: `https://picsum.photos/seed/17/800/600?grayscale`, text: 'Santorini' },
-      { image: `https://picsum.photos/seed/8/800/600?grayscale`, text: 'Blurry Lights' },
-      { image: `https://picsum.photos/seed/9/800/600?grayscale`, text: 'New York' },
-      { image: `https://picsum.photos/seed/10/800/600?grayscale`, text: 'Good Boy' },
-      { image: `https://picsum.photos/seed/21/800/600?grayscale`, text: 'Coastline' },
-      { image: `https://picsum.photos/seed/12/800/600?grayscale`, text: 'Palm Trees' }
+      { image: images1 },
+      { image: images2 },
+      { image: images3 },
+      { image: images4 },
+      { image: images5 },
+      { image: images6 },
+      { image: images7 }
     ];
     const galleryItems = items && items.length ? items : defaultItems;
     this.mediasImages = galleryItems.concat(galleryItems);
