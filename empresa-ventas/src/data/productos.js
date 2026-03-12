@@ -26,7 +26,7 @@ const products = {
       name: "Casado",
       description: "Arroz, frijoles, ensalada, plátano maduro y carne a elegir",
       price: "$14.00",
-      img: "https://via.placeholder.com/150",
+      img: "https://camaraempresarialdegrecia.com/index.php?option=com_jomcomdev&format=raw&task=ajax.image&pr=dz04NTA=&hash=7d9251&dir=ix&src=1812-4.jpg",
     },
     {
       id: 5,

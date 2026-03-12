@@ -1,8 +1,8 @@
 .producto {
-color: white;
+color: #ffffff;
 max-width: 20vw;
 width: 500px;
-min-width: 15vw;
+min-width: 300px;
 text-align: center;
 background-color: rgba(0, 0, 0, 0.274);
 border-radius: 1rem;
@@ -15,3 +15,16 @@ border-radius: 1rem;
     color: white;
 }
 
+.producto img{
+    padding-block: 10px;
+    max-width: 90%;
+    object-fit:cover;
+    max-height: 3rem;
+    width: inherit;
+    max-height: 100px;
+    border-radius: 15px;
+}
+
+.producto p{
+    font-size: small;
+}
