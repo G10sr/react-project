@@ -13,12 +13,12 @@ function Home() {
     
     const [text, setText] = useState({
         welcome: "Bienvenidos a Armonía",
-        titulo1: "Que es Armonia?",
+        titulo1: "¿Qué es Armonía?",
         titulo2: "Nuestros servicios",
         titulo3: "Nuestra misión",
-        descripcion1: "...",
-        descripcion2: "...",
-        descripcion3: "...",
+        descripcion1: "Armonía es un espacio pensado para promover el bienestar, el equilibrio y el crecimiento personal. Buscamos crear un ambiente donde las personas puedan encontrar tranquilidad, apoyo y herramientas que les ayuden a mejorar su calidad de vida.",
+        descripcion2: "Ofrecemos una variedad de servicios diseñados para apoyar tu bienestar físico, mental y emocional. Entre ellos se incluyen asesorías, actividades de desarrollo personal, talleres y acompañamiento especializado.",
+        descripcion3: "Nuestra misión es ayudar a las personas a alcanzar un estado de equilibrio y bienestar integral, brindando recursos, orientación y un entorno que fomente el crecimiento personal y una vida más consciente.",
         tituloMapa: "Donde encontrarnos:",
         valores: "Nuestros valores",
         valores1: "Calidad natural en cada bocado, compromiso con tu bienestar.",
