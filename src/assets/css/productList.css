@@ -6,5 +6,29 @@ h2 {
     display: flex;
     gap: 3rem;
     overflow-x: scroll;
-    padding: 10px
+    padding-block: 10px;
+    height: min-content;
+    overflow-y: hidden;
+}
+/* 1. Ancho de la barra completa */
+.caja::-webkit-scrollbar {
+  width: 12px;                /* Ancho en vertical */
+  height: 12px;               /* Alto en horizontal */
+}
+
+/* 2. El carril (fondo) de la barra */
+.caja::-webkit-scrollbar-track {
+  background: var(--C-greenShaded);
+  border-radius: 10px;
+}
+
+/* 3. La barra desplazadora (thumb) */
+.caja::-webkit-scrollbar-thumb {
+  background: var(--C-green);
+  border-radius: 10px;
+}
+
+/* 4. Cambiar color al pasar el ratón */
+.caja::-webkit-scrollbar-thumb:hover {
+  background: var(--C-greenHigh);
 }
