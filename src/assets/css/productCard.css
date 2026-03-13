@@ -10,9 +10,11 @@ border-radius: 1rem;
 .producto button{
     position: relative;
     bottom: 10%;
-    margin-top: 20px;
+    margin-top: 50px;
     background-color: var(--botones);
     color: white;
+    text-shadow: none;
+    border-radius: 10px;
 }
 
 .producto img{

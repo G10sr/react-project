@@ -10,7 +10,7 @@ function ProductCard({ product }) {
       <p>{product.description}</p>
       <p>{product.price}</p>
  
-      <Button text="Comprar" />
+      <Button> Comprar </Button>
     </div>
   );
 }
