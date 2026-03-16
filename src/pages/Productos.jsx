@@ -1,4 +1,4 @@
-import products from "../data/productos";
+import products from "../backend/productos";
 import ProductList from "../components/ProductList";
 import "../assets/css/productos.css";
  
