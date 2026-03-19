@@ -36,3 +36,24 @@ try{
         console.log*(error)
         res.status*(500).json({error: "Error al obtener el carrito"})
     }
+
+//API PARA ELIMINAR PRODUCTOS DEL CARRITO
+
+const {id} = req.params;
+try {
+    await Pool.query("DELETE FROM carrito WHERE id = $1", [id]);
+    res.json({message: "Producto eliminado del carrito"})
+} catch (error) {
+    console.error("Error al eliminar producto del carrito", error);
+    res.status(500).json({message: "Error al eliminar producto del carrito"})
+}
+
+//API PARA VACIAR TODO EL CARRITO
+app.delete("/carrito", async (req, res) => {
+try {
+    await Pool.query("DELETE FROM carrito");
+    res.json({message: "Carrito vaciado"})
+} catch (error) {
+    console.error("Error al vaciar el carrito", error);
+    res.status(500).json({message: "Error al vaciar el carrito"})
+}})
