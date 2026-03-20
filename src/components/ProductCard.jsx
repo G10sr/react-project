@@ -18,7 +18,7 @@ function ProductCard({ product }) {
 export default ProductCard;
 
 const comprar = async () => {
-  await fetch("http://localhost:3001/carrito", {
+  await fetch("http://localhost:3001/agregarcarrito", {
     method: "POST",
     headers: {
       "Content-Type": "application/json",
