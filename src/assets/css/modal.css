@@ -59,7 +59,7 @@
   justify-content: flex-start;
   text-align: left;
   width: min(42rem, 90vw);
-  height: 17.5rem;
+  height: auto;
   padding: 2rem;
   padding-right: 5rem;
   border-radius: 1rem;

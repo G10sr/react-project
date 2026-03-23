@@ -26,21 +26,7 @@ function Header() {
         </header>
     );
 }
-//estado del carrito
-const [carrito, setCarrito] = useState([]);
-//estado para mostrar el carrito
-const [mostrarCarrito, setMostrarCarrito] = useState(false);
-//cargar carrito desde el  backend
-const cargarCarrito = async () => {
-    fetch("http://localhost:3001/carrito")
-    .then(res => res.json())
-    .then(data => setCarrito(data))
-    .catch(error => console.error("Error al cargar el carrito", error));
-};
 
-useEffect(() => {
-    cargarCarrito();
-}, []);
 export default Header;
 
 //contador del carrito en el header
