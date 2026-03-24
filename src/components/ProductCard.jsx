@@ -9,7 +9,7 @@ function ProductCard({ product }) {
       <img src={product.imagen} alt={product.name} />
       <h3>{product.nombre}</h3>
       <p>{product.descripcion}</p>
-      <p>{product.precio}</p>
+      <p>${product.precio}</p>
  
       <Button onClick={() => alert(`Click en: ${product.id}`)}>
         Comprar
