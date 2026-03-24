@@ -1,18 +1,6 @@
-const { Pool } = require("pg");
-const dns = require("dns");
-require("dotenv").config();
+import postgres from 'postgres'
 
-// Forzar resolución IPv4
-dns.setDefaultResultOrder("ipv4first");
+const connectionString = process.env.DATABASE_URL
+const sql = postgres(connectionString)
 
-console.log("DATABASE_URL:", process.env.DATABASE_URL);
-
-const pool = new Pool({
-  connectionString: process.env.DATABASE_URL,
-  ssl: {
-    require: true,
-    rejectUnauthorized: false,
-  },
-});
-
-module.exports = pool;
+export default sql
