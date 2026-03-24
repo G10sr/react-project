@@ -1,4 +1,6 @@
 import React, { useState } from "react";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faBasketShopping } from "@fortawesome/free-solid-svg-icons";
 import { Link, useLocation } from "react-router-dom";
 import "../assets/css/header.css";
 import logo1 from "../assets/img/arLogo.jpg";
@@ -21,6 +23,12 @@ function Header() {
                 </Link>
                 <Link to="/productos">
                     <button className={`btn ${location.pathname === "/productos" ? "active" : ""}`}>{text.option2}</button>
+                </Link>
+                <Link to="/carrito">
+                    <FontAwesomeIcon 
+                    className={`btn ${location.pathname === "/carrito" ? "active" : ""}`} 
+                    icon={faBasketShopping} 
+                    />
                 </Link>
             </div>
         </header>
