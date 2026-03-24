@@ -65,7 +65,7 @@ function Home() {
             <section className="section-map">
                 <p>{text.tituloMapa}</p>
                 <iframe
-                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d292.0598114396966!2d-84.17511407566965!3d9.977749306696493!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8fa0fb006d4fa4a5%3A0xbe651073ad3f1863!2sSoda%20Armon%C3%ADa!5e0!3m2!1ses!2scr!4v1773407683362!5m2!1ses!2scr"
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d227.6841964948118!2d-84.17504236990727!3d9.97789012814426!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8fa0fb006d4fa4a5%3A0xbe651073ad3f1863!2sSoda%20Armon%C3%ADa!5e1!3m2!1ses!2scr!4v1774321539705!5m2!1ses!2scr"
                     width="600"
                     height="450"
                     style={{ border: 0, 
