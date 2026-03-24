@@ -3,27 +3,13 @@ import Button from "./CustomButton";
 import "../assets/css/productCard.css";
 
 function ProductCard({ product }) {
-  const comprar = async () => {
-  await fetch("http://localhost:3001/agregarcarrito", {
-      method: "POST",
-      headers: {
-        "Content-Type": "application/json",
-      },
-      body: JSON.stringify({
-        nombre: productos.nombre,
-        precio: productos.precio,
-        imagen: producto.img,
-      }),
-    })
-    alert("Producto agregado al carrito")
-  }
 
   return (
     <div className="producto">
-      <img src={product.img} alt={product.name} />
-      <h3>{product.name}</h3>
-      <p>{product.description}</p>
-      <p>{product.price}</p>
+      <img src={product.imagen} alt={product.name} />
+      <h3>{product.nombre}</h3>
+      <p>{product.descripcion}</p>
+      <p>{product.precio}</p>
  
       <Button> Comprar </Button>
     </div>

@@ -9,6 +9,7 @@ const app = express();
 app.use(cors());
 app.use(express.json());
 
+
 app.get("/api/productos", async (req, res) => {
   try {
     const productos = await sql`SELECT * FROM productos`;

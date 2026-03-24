@@ -15,7 +15,6 @@ function Productos() {
         const res = await fetch("http://localhost:3001/api/productos");
         const data = await res.json();
 
-        // agrupamos por categoría
         const agrupados = {
           almuerzos: data.filter(p => p.categoria === "almuerzos"),
           bebidas: data.filter(p => p.categoria === "bebidas"),
@@ -30,6 +29,7 @@ function Productos() {
 
     obtenerProductos();
   }, []);
+  console.log(products);
 
   return (
     <div id="box">
