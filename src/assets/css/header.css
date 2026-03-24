@@ -21,7 +21,7 @@ header img{
     margin-left: auto;
     margin-right: 10vw;
 }
-button{
+.btn{
     background-color: transparent;
     padding-inline: 3vw;
     padding-block: 2vh;
@@ -33,12 +33,12 @@ button{
     color: white;
     text-shadow: 2px 4px 4px #363636;
 }
-button:hover{
+.btn:hover{
     text-shadow: none;
     background-color: var(--botonesHover);
 }
 
-button.active {
+.btn.active {
     background-color: var(--botones);
     color: white;
     font-weight: bold;

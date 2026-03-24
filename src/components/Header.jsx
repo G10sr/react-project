@@ -25,7 +25,8 @@ function Header() {
                     <button className={`btn ${location.pathname === "/productos" ? "active" : ""}`}>{text.option2}</button>
                 </Link>
                 <Link to="/carrito">
-                    <FontAwesomeIcon 
+                    <FontAwesomeIcon
+                    id="cart-icon"
                     className={`btn ${location.pathname === "/carrito" ? "active" : ""}`} 
                     icon={faBasketShopping} 
                     />
