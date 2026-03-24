@@ -11,7 +11,9 @@ function ProductCard({ product }) {
       <p>{product.descripcion}</p>
       <p>{product.precio}</p>
  
-      <Button> Comprar </Button>
+      <Button onClick={() => alert(`Click en: ${product.id}`)}>
+        Comprar
+      </Button>
     </div>
   );
 }

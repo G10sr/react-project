@@ -7,7 +7,7 @@ h2 {
     gap: 3rem;
     overflow-x: scroll;
     padding-block: 10px;
-    height: min-content;
+    height: max-content;
     overflow-y: hidden;
 }
 /* 1. Ancho de la barra completa */
